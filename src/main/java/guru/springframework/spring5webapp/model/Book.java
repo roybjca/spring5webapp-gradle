@@ -19,7 +19,6 @@ public class Book {
     private Set<Author> authors = new HashSet<>();
 
     @OneToOne
-    @JoinTable(name = "book_publisher", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "publisher_id"))
     private Publisher publisher;
 
     public Book() {
